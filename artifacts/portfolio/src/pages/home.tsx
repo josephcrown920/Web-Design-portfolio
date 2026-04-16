@@ -3,45 +3,66 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, Code2, Cpu, ExternalLink, Github, Layers, Mail, Terminal, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+import mudworldImg from "@assets/IMG_5215_1776301834929.jpeg";
+import creatorsFactoryImg from "@assets/IMG_5533_1776301834929.jpeg";
+import tessArtsImg from "@assets/IMG_5540_1776301834929.jpeg";
+import ytShortImg from "@assets/IMG_4534_1776301834930.png";
+import ytrisNFTImg from "@assets/IMG_4318_1776301834930.png";
+import ytrisMerchImg from "@assets/IMG_5708_1776301834929.jpeg";
+
 const projects = [
   {
     id: 1,
-    title: "Sentient",
-    description: "An AI writing assistant interface featuring a modern dark mode dashboard, sleek glowing typography, and minimalist glassmorphism panels.",
-    tags: ["React", "TypeScript", "OpenAI", "Tailwind CSS"],
-    image: "/images/project-sentient.png",
+    title: "MudWorld",
+    description:
+      "A full fan commerce platform for NBA Josh x MuddyTribe. Features an official merch store, NFT drops on Ethereum, membership tiers, unreleased music access, and a live announcement system — all under a single dark, immersive brand experience.",
+    tags: ["React", "E-commerce", "NFT", "Web3", "Replit AI"],
+    image: mudworldImg,
     link: "#",
   },
   {
     id: 2,
-    title: "Nexus",
-    description: "Data visualization dashboard with neural network nodes, deep dark blue background with neon purple and blue glowing charts and graphs.",
-    tags: ["Next.js", "D3.js", "WebGL", "Framer Motion"],
-    image: "/images/project-nexus.png",
+    title: "The Creators Factory",
+    description:
+      "An all-in-one creator platform to automate YouTube Shorts, grow audiences, pitch to playlists, and manage an entire creator business. Features Google sign-in, a 30-min free trial flow, and AI-powered content management.",
+    tags: ["React", "AI", "YouTube API", "Automation", "Replit AI"],
+    image: creatorsFactoryImg,
     link: "#",
   },
   {
     id: 3,
-    title: "Aura",
-    description: "Modern generative art marketplace website showcasing vibrant abstract digital art in a sleek grid with glowing neon borders.",
-    tags: ["Web3.js", "Solidity", "React", "IPFS"],
-    image: "/images/project-aura.png",
+    title: "TessArts Gallery",
+    description:
+      "A curated NFT art gallery platform for original paintings by Tess. Users can browse the collection, connect their Web3 wallet, and own authenticated pieces as NFTs. Artist login and community features built in.",
+    tags: ["React", "Web3.js", "NFT", "Wallet Connect", "Replit AI"],
+    image: tessArtsImg,
     link: "#",
   },
   {
     id: 4,
-    title: "Orbit",
-    description: "Intelligent calendar and task manager application with a sleek dark theme, floating glassmorphism cards, and glowing timeline events.",
-    tags: ["Vue", "Node.js", "PostgreSQL", "Redis"],
-    image: "/images/project-orbit.png",
+    title: "YouTube Shorts Automation",
+    description:
+      "Professional-grade automation engine for viral content growth. AI-powered captions, scheduled uploads, real-time analytics, and auto ingestion — built for creators serious about scaling their YouTube presence.",
+    tags: ["React", "OpenAI", "YouTube API", "Analytics", "Replit AI"],
+    image: ytShortImg,
     link: "#",
   },
   {
     id: 5,
-    title: "Echo",
-    description: "Voice-first social network web app concept with audio waveforms featuring electric neon gradients and sleek modern typography.",
-    tags: ["WebRTC", "Socket.io", "React", "Express"],
-    image: "/images/project-echo.png",
+    title: "YTRISC — NFT Music EP",
+    description:
+      "A Web3 music experience for \"You're The Reason I Still Care\" by NBA Josh. Connect a wallet to unlock exclusive nocturnal EP content, view on OpenSea, or get a wallet — all in a sleek Ethereum-native interface.",
+    tags: ["Web3.js", "Ethereum", "MetaMask", "OpenSea", "Replit AI"],
+    image: ytrisNFTImg,
+    link: "#",
+  },
+  {
+    id: 6,
+    title: "YTRISC Merch Store",
+    description:
+      "A dedicated mobile-first merchandise storefront for NBA Josh's YTRISC collection. Features hoodies, tees, and limited drops with a clean dark UI, product cards, and seamless add-to-cart experience.",
+    tags: ["React", "E-commerce", "Mobile UI", "Merch", "Replit AI"],
+    image: ytrisMerchImg,
     link: "#",
   },
 ];
@@ -80,31 +101,27 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 md:px-12 backdrop-blur-md bg-background/50 border-b border-white/5">
         <div className="text-xl font-bold tracking-tighter text-white flex items-center gap-2">
           <div className="w-8 h-8 rounded bg-gradient-to-tr from-primary to-secondary flex items-center justify-center text-background font-mono text-sm">
-            AE
+            NJ
           </div>
-          <span className="hidden sm:inline-block">ALEX ELDRIDGE</span>
+          <span className="hidden sm:inline-block">@NBAJosh71</span>
         </div>
         <div className="flex items-center gap-6 text-sm font-medium text-muted-foreground">
           <a href="#about" className="hover:text-primary transition-colors">About</a>
           <a href="#work" className="hover:text-primary transition-colors">Work</a>
           <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
           <Button variant="outline" className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all">
-            Resume
+            Hire Me
           </Button>
         </div>
       </nav>
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center pt-20">
-        <motion.div 
+        <motion.div
           className="absolute inset-0 z-0"
           style={{ y: heroY, opacity: heroOpacity }}
         >
-          <img 
-            src="/images/hero-bg.png" 
-            alt="Abstract dark matter neon background" 
-            className="w-full h-full object-cover opacity-40 mix-blend-screen"
-          />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(120,80,255,0.3),rgba(0,0,0,0))]" />
           <div className="absolute inset-0 bg-gradient-to-b from-background/10 via-background/80 to-background" />
         </motion.div>
 
@@ -119,24 +136,26 @@ export default function Home() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
-              Available for new projects
+              Available for new projects — Port Harcourt & worldwide
             </div>
-            
+
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter leading-tight mb-6">
               Engineering <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Intelligent</span> Web
             </h1>
-            
+
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-              I don't just code. I build living, breathing digital experiences powered by artificial intelligence and precision engineering.
+              I build AI-powered websites that grow businesses — from Web3 platforms to creator tools to e-commerce stores. Port Harcourt's go-to web developer.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 text-base">
-                View Projects <ArrowRight className="ml-2 w-4 h-4" />
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 text-base" asChild>
+                <a href="#work">View Projects <ArrowRight className="ml-2 w-4 h-4" /></a>
               </Button>
-              <Button size="lg" variant="outline" className="border-white/10 hover:bg-white/5 h-12 px-8 text-base">
-                <Github className="mr-2 w-4 h-4" /> GitHub Profile
+              <Button size="lg" variant="outline" className="border-white/10 hover:bg-white/5 h-12 px-8 text-base" asChild>
+                <a href="#contact">
+                  <Mail className="mr-2 w-4 h-4" /> Get in Touch
+                </a>
               </Button>
             </div>
           </motion.div>
@@ -144,7 +163,7 @@ export default function Home() {
       </section>
 
       {/* Expertise Section */}
-      <section id="about" className="py-24 relative relative z-10 bg-background border-t border-white/5">
+      <section id="about" className="py-24 relative z-10 bg-background border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="mb-16 md:mb-24">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">Technical Arsenal</h2>
@@ -184,31 +203,28 @@ export default function Home() {
             <div>
               <h2 className="text-3xl md:text-5xl font-bold mb-6">Selected Works</h2>
               <p className="text-muted-foreground text-lg max-w-2xl">
-                A showcase of complex interfaces, AI integrations, and digital products built with uncompromising quality.
+                Real projects built with AI tools — e-commerce platforms, creator tools, Web3 experiences, and more.
               </p>
             </div>
-            <Button variant="link" className="text-primary hover:text-primary/80 p-0 h-auto font-medium text-base group">
-              View All Archive <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
           </div>
 
           <div className="space-y-32">
             {projects.map((project, i) => (
-              <motion.div 
+              <motion.div
                 key={project.id}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-200px" }}
                 transition={{ duration: 0.7 }}
-                className={`flex flex-col gap-8 md:gap-16 ${i % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center`}
+                className={`flex flex-col gap-8 md:gap-16 ${i % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"} items-center`}
               >
                 <div className="w-full md:w-3/5 group relative">
                   <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                   <div className="relative aspect-[16/10] rounded-xl overflow-hidden border border-white/10 bg-card">
-                    <img 
-                      src={project.image} 
-                      alt={project.title} 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
                     />
                     <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500" />
                   </div>
@@ -216,8 +232,11 @@ export default function Home() {
 
                 <div className="w-full md:w-2/5 flex flex-col justify-center">
                   <div className="flex items-center gap-3 mb-6 flex-wrap">
-                    {project.tags.map(tag => (
-                      <span key={tag} className="text-xs font-mono text-primary bg-primary/10 px-3 py-1 rounded-full border border-primary/20">
+                    {project.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="text-xs font-mono text-primary bg-primary/10 px-3 py-1 rounded-full border border-primary/20"
+                      >
                         {tag}
                       </span>
                     ))}
@@ -228,7 +247,7 @@ export default function Home() {
                   </p>
                   <div>
                     <Button className="bg-white text-black hover:bg-gray-200">
-                      View Live Site <ExternalLink className="ml-2 w-4 h-4" />
+                      View Project <ExternalLink className="ml-2 w-4 h-4" />
                     </Button>
                   </div>
                 </div>
@@ -241,7 +260,7 @@ export default function Home() {
       {/* CTA / Contact Section */}
       <section id="contact" className="py-32 relative z-10 bg-background border-t border-white/5">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/10 via-background to-background pointer-events-none" />
-        
+
         <div className="max-w-4xl mx-auto px-6 md:px-12 text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -250,18 +269,25 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl md:text-6xl font-bold mb-8 tracking-tight">
-              Ready to build something <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">extraordinary?</span>
+              Ready for a website that{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+                grows your business?
+              </span>
             </h2>
             <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-              I am currently accepting new freelance projects and full-time roles. Let's discuss how we can engineer the future together.
+              DM me on Twitter or send a message. I'm currently accepting new projects — from e-commerce to Web3 to AI-powered platforms.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 h-14 px-10 text-lg w-full sm:w-auto">
-                <Mail className="mr-2 w-5 h-5" /> Get in Touch
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 h-14 px-10 text-lg w-full sm:w-auto" asChild>
+                <a href="https://twitter.com/NBAJosh71" target="_blank" rel="noopener noreferrer">
+                  DM @NBAJosh71
+                </a>
               </Button>
-              <Button size="lg" variant="outline" className="border-white/10 hover:bg-white/5 h-14 px-10 text-lg w-full sm:w-auto">
-                <Terminal className="mr-2 w-5 h-5" /> Book a Call
+              <Button size="lg" variant="outline" className="border-white/10 hover:bg-white/5 h-14 px-10 text-lg w-full sm:w-auto" asChild>
+                <a href="mailto:">
+                  <Mail className="mr-2 w-5 h-5" /> Send Email
+                </a>
               </Button>
             </div>
           </motion.div>
@@ -272,12 +298,10 @@ export default function Home() {
       <footer className="py-8 border-t border-white/5 bg-background relative z-10 text-center md:text-left">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-muted-foreground text-sm font-mono">
-            &copy; {new Date().getFullYear()} ALEX ELDRIDGE. ALL RIGHTS RESERVED.
+            &copy; {new Date().getFullYear()} @NBAJosh71 — PORT HARCOURT'S GO-TO WEB DEVELOPER
           </div>
           <div className="flex gap-6 text-sm text-muted-foreground font-mono">
-            <a href="#" className="hover:text-primary transition-colors">TWITTER</a>
-            <a href="#" className="hover:text-primary transition-colors">LINKEDIN</a>
-            <a href="#" className="hover:text-primary transition-colors">GITHUB</a>
+            <a href="https://twitter.com/NBAJosh71" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">TWITTER</a>
           </div>
         </div>
       </footer>
