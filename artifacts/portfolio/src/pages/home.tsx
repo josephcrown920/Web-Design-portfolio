@@ -1,6 +1,6 @@
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowRight, Code2, Cpu, ExternalLink, Github, Layers, Mail, Terminal, Zap } from "lucide-react";
+import { ArrowRight, Award, Code2, Cpu, ExternalLink, Layers, Mail, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 import profileImg from "@assets/IMG_3049_1776301941348.webp";
@@ -10,14 +10,16 @@ import tessArtsImg from "@assets/IMG_5540_1776301834929.jpeg";
 import ytShortImg from "@assets/IMG_4534_1776301834930.png";
 import ytrisNFTImg from "@assets/IMG_4318_1776301834930.png";
 import ytrisMerchImg from "@assets/IMG_5708_1776301834929.jpeg";
+import replitCertImg from "@assets/IMG_5719_1776302272437.jpeg";
+import replitLogoImg from "@assets/IMG_5488_1776302272437.png";
 
 const projects = [
   {
     id: 1,
     title: "MudWorld",
     description:
-      "A full fan commerce platform for NBA Josh x MuddyTribe. Features an official merch store, NFT drops on Ethereum, membership tiers, unreleased music access, and a live announcement system — all under a single dark, immersive brand experience.",
-    tags: ["React", "E-commerce", "NFT", "Web3", "Replit AI"],
+      "A full fan commerce platform for NBA Josh x MuddyTribe. Features an official merch store, NFT drops on Ethereum, membership tiers, unreleased music access, and a live announcement system — built entirely on Replit.",
+    tags: ["React", "E-commerce", "NFT", "Web3", "Built on Replit"],
     image: mudworldImg,
     link: "#",
   },
@@ -25,8 +27,8 @@ const projects = [
     id: 2,
     title: "The Creators Factory",
     description:
-      "An all-in-one creator platform to automate YouTube Shorts, grow audiences, pitch to playlists, and manage an entire creator business. Features Google sign-in, a 30-min free trial flow, and AI-powered content management.",
-    tags: ["React", "AI", "YouTube API", "Automation", "Replit AI"],
+      "An all-in-one creator platform to automate YouTube Shorts, grow audiences, and manage an entire creator business. AI-powered content management and analytics — developed with Replit Agent.",
+    tags: ["React", "AI", "YouTube API", "Automation", "Built on Replit"],
     image: creatorsFactoryImg,
     link: "#",
   },
@@ -34,8 +36,8 @@ const projects = [
     id: 3,
     title: "TessArts Gallery",
     description:
-      "A curated NFT art gallery platform for original paintings by Tess. Users can browse the collection, connect their Web3 wallet, and own authenticated pieces as NFTs. Artist login and community features built in.",
-    tags: ["React", "Web3.js", "NFT", "Wallet Connect", "Replit AI"],
+      "A curated NFT art gallery platform for original paintings by Tess. Users can browse, connect their Web3 wallet, and own authenticated pieces as NFTs. Built and deployed on Replit.",
+    tags: ["React", "Web3.js", "NFT", "Wallet Connect", "Built on Replit"],
     image: tessArtsImg,
     link: "#",
   },
@@ -43,8 +45,8 @@ const projects = [
     id: 4,
     title: "YouTube Shorts Automation",
     description:
-      "Professional-grade automation engine for viral content growth. AI-powered captions, scheduled uploads, real-time analytics, and auto ingestion — built for creators serious about scaling their YouTube presence.",
-    tags: ["React", "OpenAI", "YouTube API", "Analytics", "Replit AI"],
+      "Professional-grade automation engine for viral content growth. AI-powered captions, scheduled uploads, and real-time analytics — powered by Replit AI and deployed on Replit.",
+    tags: ["React", "OpenAI", "YouTube API", "Analytics", "Built on Replit"],
     image: ytShortImg,
     link: "#",
   },
@@ -52,8 +54,8 @@ const projects = [
     id: 5,
     title: "YTRISC — NFT Music EP",
     description:
-      "A Web3 music experience for \"You're The Reason I Still Care\" by NBA Josh. Connect a wallet to unlock exclusive nocturnal EP content, view on OpenSea, or get a wallet — all in a sleek Ethereum-native interface.",
-    tags: ["Web3.js", "Ethereum", "MetaMask", "OpenSea", "Replit AI"],
+      "A Web3 music experience for \"You're The Reason I Still Care\" by NBA Josh. Connect a wallet to unlock exclusive EP content, view on OpenSea — built on Replit with full Ethereum integration.",
+    tags: ["Web3.js", "Ethereum", "MetaMask", "OpenSea", "Built on Replit"],
     image: ytrisNFTImg,
     link: "#",
   },
@@ -61,8 +63,8 @@ const projects = [
     id: 6,
     title: "YTRISC Merch Store",
     description:
-      "A dedicated mobile-first merchandise storefront for NBA Josh's YTRISC collection. Features hoodies, tees, and limited drops with a clean dark UI, product cards, and seamless add-to-cart experience.",
-    tags: ["React", "E-commerce", "Mobile UI", "Merch", "Replit AI"],
+      "A dedicated mobile-first merchandise storefront for NBA Josh's YTRISC collection. Features hoodies, tees, and limited drops — designed and shipped entirely with Replit.",
+    tags: ["React", "E-commerce", "Mobile UI", "Merch", "Built on Replit"],
     image: ytrisMerchImg,
     link: "#",
   },
@@ -70,24 +72,24 @@ const projects = [
 
 const expertise = [
   {
+    title: "Replit AI Development",
+    description: "I build full-stack applications using Replit Agent — from idea to deployed product, entirely inside Replit's AI-powered environment.",
+    icon: <img src={replitLogoImg} alt="Replit" className="w-6 h-6 object-contain" />,
+  },
+  {
     title: "Frontend Engineering",
-    description: "Building resilient, accessible, and highly interactive user interfaces using modern frameworks.",
+    description: "Building resilient, accessible, and highly interactive user interfaces using modern frameworks — all scaffolded and shipped via Replit.",
     icon: <Code2 className="w-6 h-6 text-primary" />,
   },
   {
     title: "AI Integration",
-    description: "Connecting large language models and neural networks directly into intuitive user experiences.",
+    description: "Connecting large language models and neural networks directly into intuitive user experiences using Replit's AI toolchain.",
     icon: <Cpu className="w-6 h-6 text-primary" />,
   },
   {
-    title: "System Architecture",
-    description: "Designing scalable, serverless, and edge-ready web applications from the ground up.",
+    title: "Web3 & E-commerce",
+    description: "Designing and deploying Web3 platforms, NFT experiences, and full e-commerce stores — built fast on Replit.",
     icon: <Layers className="w-6 h-6 text-primary" />,
-  },
-  {
-    title: "Performance Optimization",
-    description: "Ensuring 60fps animations, sub-second load times, and minimal bundle sizes.",
-    icon: <Zap className="w-6 h-6 text-primary" />,
   },
 ];
 
@@ -117,7 +119,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center pt-20">
+      <section className="relative min-h-screen flex items-center justify-center pt-20">
         <motion.div
           className="absolute inset-0 z-0"
           style={{ y: heroY, opacity: heroOpacity }}
@@ -126,7 +128,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-background/10 via-background/80 to-background" />
         </motion.div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12 md:gap-20">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12 md:gap-20 py-20">
           {/* Text */}
           <motion.div
             className="flex-1 text-center md:text-left"
@@ -134,12 +136,18 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary mb-8 text-sm font-medium">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary mb-4 text-sm font-medium">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
               Available for new projects — worldwide
+            </div>
+
+            {/* Replit certification badge */}
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-orange-500/40 bg-orange-500/10 text-orange-400 mb-8 text-sm font-medium ml-2">
+              <Award className="w-3.5 h-3.5" />
+              Replit Certified · Level 2 Core Builder
             </div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter leading-tight mb-6">
@@ -148,7 +156,7 @@ export default function Home() {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-10">
-              I build AI-powered websites that grow businesses — from Web3 platforms to creator tools to e-commerce stores.
+              I build AI-powered websites using <span className="text-orange-400 font-semibold">Replit</span> — from Web3 platforms to creator tools to e-commerce stores. Every project in my portfolio was built and deployed on Replit.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-4">
@@ -193,9 +201,9 @@ export default function Home() {
       <section id="about" className="py-24 relative z-10 bg-background border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="mb-16 md:mb-24">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">Technical Arsenal</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">Built on Replit</h2>
             <p className="text-muted-foreground text-lg max-w-2xl">
-              Merging deep frontend expertise with modern AI capabilities to deliver applications that feel like magic.
+              Every project I build lives on <span className="text-orange-400 font-semibold">Replit</span> — from development to deployment. I use Replit Agent to go from idea to live product faster than any other workflow.
             </p>
           </div>
 
@@ -220,6 +228,29 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
+
+          {/* Replit Certification */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mt-16 flex flex-col md:flex-row items-center gap-10 p-8 rounded-2xl border border-orange-500/20 bg-orange-500/5"
+          >
+            <div className="flex-shrink-0 w-40 h-40 rounded-xl overflow-hidden shadow-lg">
+              <img src={replitCertImg} alt="Replit Core Builder Certification" className="w-full h-full object-cover" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2 mb-3">
+                <img src={replitLogoImg} alt="Replit" className="w-5 h-5 object-contain" />
+                <span className="text-orange-400 text-sm font-semibold uppercase tracking-widest">Replit Certification</span>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-3">Level 2 — Core Builder</h3>
+              <p className="text-muted-foreground max-w-xl leading-relaxed">
+                Certified by Replit for the ability to build more complex applications, store and manage data, and provide effective context to the AI Agent. Verified skills include full-stack development, database integration, and AI-driven product development on the Replit platform.
+              </p>
+            </div>
+          </motion.div>
         </div>
       </section>
 
@@ -230,7 +261,7 @@ export default function Home() {
             <div>
               <h2 className="text-3xl md:text-5xl font-bold mb-6">Selected Works</h2>
               <p className="text-muted-foreground text-lg max-w-2xl">
-                Real projects built with AI tools — e-commerce platforms, creator tools, Web3 experiences, and more.
+                Real projects built and deployed with <span className="text-orange-400 font-semibold">Replit</span> — e-commerce platforms, creator tools, Web3 experiences, and more.
               </p>
             </div>
           </div>
@@ -262,7 +293,11 @@ export default function Home() {
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-xs font-mono text-primary bg-primary/10 px-3 py-1 rounded-full border border-primary/20"
+                        className={`text-xs font-mono px-3 py-1 rounded-full border ${
+                          tag === "Built on Replit"
+                            ? "text-orange-400 bg-orange-500/10 border-orange-500/30"
+                            : "text-primary bg-primary/10 border-primary/20"
+                        }`}
                       >
                         {tag}
                       </span>
@@ -302,7 +337,7 @@ export default function Home() {
               </span>
             </h2>
             <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-              DM me on Instagram or send an email. I'm currently accepting new projects — from e-commerce to Web3 to AI-powered platforms.
+              DM me on Instagram or send an email. I build on <span className="text-orange-400 font-semibold">Replit</span> — fast, reliable, and AI-powered from day one.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
@@ -324,8 +359,13 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-8 border-t border-white/5 bg-background relative z-10 text-center md:text-left">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="text-muted-foreground text-sm font-mono">
-            &copy; {new Date().getFullYear()} JOSEPH SUNDAY. ALL RIGHTS RESERVED.
+          <div className="text-muted-foreground text-sm font-mono flex items-center gap-2">
+            &copy; {new Date().getFullYear()} JOSEPH SUNDAY
+            <span className="text-white/20">·</span>
+            <span className="flex items-center gap-1 text-orange-400/70">
+              <img src={replitLogoImg} alt="Replit" className="w-3.5 h-3.5 object-contain" />
+              BUILT ON REPLIT
+            </span>
           </div>
           <div className="flex gap-6 text-sm text-muted-foreground font-mono">
             <a href="https://instagram.com/NBAJosh71" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">INSTAGRAM</a>
