@@ -1,0 +1,38 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "Ya3gr-dPQn_htKht0ArXz"
+uri = "file://artifacts/portfolio/public/images/hero-bg.png"
+type = "image"
+title = "Dark abstract neon tech hero"
+
+[[generated]]
+id = "k6KZmv0NDS-RztAcCXvnV"
+uri = "file://artifacts/portfolio/public/images/project-sentient.png"
+type = "image"
+title = "AI writing assistant interface"
+
+[[generated]]
+id = "KQbkD6AgFHwQ89MkUDRhN"
+uri = "file://artifacts/portfolio/public/images/project-nexus.png"
+type = "image"
+title = "Neural data visualization dashboard"
+
+[[generated]]
+id = "MYrFkhsCmbAZ5HpQD1U3i"
+uri = "file://artifacts/portfolio/public/images/project-aura.png"
+type = "image"
+title = "Generative art marketplace"
+
+[[generated]]
+id = "aNR3gD6sHOkdn9EywW-Bq"
+uri = "file://artifacts/portfolio/public/images/project-orbit.png"
+type = "image"
+title = "Intelligent calendar task manager"
+
+[[generated]]
+id = "I9tKwdHta8EFcIXEVbHB8"
+uri = "file://artifacts/portfolio/public/images/project-echo.png"
+type = "image"
+title = "Voice first social network"
