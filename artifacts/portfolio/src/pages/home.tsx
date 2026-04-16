@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, Code2, Cpu, ExternalLink, Github, Layers, Mail, Terminal, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+import profileImg from "@assets/IMG_3049_1776301941348.webp";
 import mudworldImg from "@assets/IMG_5215_1776301834929.jpeg";
 import creatorsFactoryImg from "@assets/IMG_5533_1776301834929.jpeg";
 import tessArtsImg from "@assets/IMG_5540_1776301834929.jpeg";
@@ -125,8 +126,10 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-background/10 via-background/80 to-background" />
         </motion.div>
 
-        <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-12 text-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12 md:gap-20">
+          {/* Text */}
           <motion.div
+            className="flex-1 text-center md:text-left"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -139,16 +142,16 @@ export default function Home() {
               Available for new projects — Port Harcourt & worldwide
             </div>
 
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter leading-tight mb-6">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter leading-tight mb-6">
               Engineering <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Intelligent</span> Web
             </h1>
 
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-10">
               I build AI-powered websites that grow businesses — from Web3 platforms to creator tools to e-commerce stores. Port Harcourt's go-to web developer.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-4">
               <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 text-base" asChild>
                 <a href="#work">View Projects <ArrowRight className="ml-2 w-4 h-4" /></a>
               </Button>
@@ -157,6 +160,30 @@ export default function Home() {
                   <Mail className="mr-2 w-4 h-4" /> Get in Touch
                 </a>
               </Button>
+            </div>
+          </motion.div>
+
+          {/* Photo */}
+          <motion.div
+            className="flex-shrink-0 w-64 md:w-80 lg:w-96"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
+          >
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-tr from-primary/40 to-secondary/30 rounded-3xl blur-2xl opacity-60" />
+              <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl aspect-[3/4]">
+                <img
+                  src={profileImg}
+                  alt="Joseph Sunday"
+                  className="w-full h-full object-cover object-top"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
+                <div className="absolute bottom-4 left-4 right-4">
+                  <p className="text-white font-bold text-lg tracking-tight">Joseph Sunday</p>
+                  <p className="text-primary text-sm font-medium">Web Developer · Port Harcourt</p>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
