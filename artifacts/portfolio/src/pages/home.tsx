@@ -139,7 +139,7 @@ export default function Home() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
-              Available for new projects — Port Harcourt & worldwide
+              Available for new projects — worldwide
             </div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter leading-tight mb-6">
@@ -148,7 +148,7 @@ export default function Home() {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-10">
-              I build AI-powered websites that grow businesses — from Web3 platforms to creator tools to e-commerce stores. Port Harcourt's go-to web developer.
+              I build AI-powered websites that grow businesses — from Web3 platforms to creator tools to e-commerce stores.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-4">
@@ -181,7 +181,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4">
                   <p className="text-white font-bold text-lg tracking-tight">Joseph Sunday</p>
-                  <p className="text-primary text-sm font-medium">Web Developer · Port Harcourt</p>
+                  <p className="text-primary text-sm font-medium">Web Developer</p>
                 </div>
               </div>
             </div>
@@ -302,18 +302,18 @@ export default function Home() {
               </span>
             </h2>
             <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-              DM me on Twitter or send a message. I'm currently accepting new projects — from e-commerce to Web3 to AI-powered platforms.
+              DM me on Instagram or send an email. I'm currently accepting new projects — from e-commerce to Web3 to AI-powered platforms.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 h-14 px-10 text-lg w-full sm:w-auto" asChild>
-                <a href="https://twitter.com/NBAJosh71" target="_blank" rel="noopener noreferrer">
+                <a href="https://instagram.com/NBAJosh71" target="_blank" rel="noopener noreferrer">
                   DM @NBAJosh71
                 </a>
               </Button>
               <Button size="lg" variant="outline" className="border-white/10 hover:bg-white/5 h-14 px-10 text-lg w-full sm:w-auto" asChild>
-                <a href="mailto:">
-                  <Mail className="mr-2 w-5 h-5" /> Send Email
+                <a href="mailto:Josephcrown920@gmail.com">
+                  <Mail className="mr-2 w-5 h-5" /> Josephcrown920@gmail.com
                 </a>
               </Button>
             </div>
@@ -325,10 +325,11 @@ export default function Home() {
       <footer className="py-8 border-t border-white/5 bg-background relative z-10 text-center md:text-left">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-muted-foreground text-sm font-mono">
-            &copy; {new Date().getFullYear()} JOSEPH SUNDAY — PORT HARCOURT'S GO-TO WEB DEVELOPER
+            &copy; {new Date().getFullYear()} JOSEPH SUNDAY. ALL RIGHTS RESERVED.
           </div>
           <div className="flex gap-6 text-sm text-muted-foreground font-mono">
-            <a href="https://twitter.com/NBAJosh71" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">TWITTER</a>
+            <a href="https://instagram.com/NBAJosh71" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">INSTAGRAM</a>
+            <a href="mailto:Josephcrown920@gmail.com" className="hover:text-primary transition-colors">EMAIL</a>
           </div>
         </div>
       </footer>
