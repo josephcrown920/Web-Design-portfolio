@@ -101,9 +101,9 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 md:px-12 backdrop-blur-md bg-background/50 border-b border-white/5">
         <div className="text-xl font-bold tracking-tighter text-white flex items-center gap-2">
           <div className="w-8 h-8 rounded bg-gradient-to-tr from-primary to-secondary flex items-center justify-center text-background font-mono text-sm">
-            NJ
+            JS
           </div>
-          <span className="hidden sm:inline-block">@NBAJosh71</span>
+          <span className="hidden sm:inline-block">Joseph Sunday</span>
         </div>
         <div className="flex items-center gap-6 text-sm font-medium text-muted-foreground">
           <a href="#about" className="hover:text-primary transition-colors">About</a>
@@ -298,7 +298,7 @@ export default function Home() {
       <footer className="py-8 border-t border-white/5 bg-background relative z-10 text-center md:text-left">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-muted-foreground text-sm font-mono">
-            &copy; {new Date().getFullYear()} @NBAJosh71 — PORT HARCOURT'S GO-TO WEB DEVELOPER
+            &copy; {new Date().getFullYear()} JOSEPH SUNDAY — PORT HARCOURT'S GO-TO WEB DEVELOPER
           </div>
           <div className="flex gap-6 text-sm text-muted-foreground font-mono">
             <a href="https://twitter.com/NBAJosh71" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">TWITTER</a>
