@@ -4,14 +4,18 @@ import { ArrowRight, Award, Code2, Cpu, ExternalLink, Layers, Mail, Zap } from "
 import { Button } from "@/components/ui/button";
 
 import profileImg from "@assets/IMG_3049_1776301941348.webp";
-import mudworldImg from "@assets/IMG_5215_1776301834929.jpeg";
+import mudworldImg from "@assets/IMG_7246_1779447433922.jpeg";
 import creatorsFactoryImg from "@assets/IMG_5533_1776301834929.jpeg";
 import tessArtsImg from "@assets/IMG_5540_1776301834929.jpeg";
-import ytShortImg from "@assets/IMG_4534_1776301834930.png";
-import ytrisNFTImg from "@assets/IMG_4318_1776301834930.png";
+import ytShortImg from "@assets/IMG_7004_1779447433922.jpeg";
+import ytrisNFTImg from "@assets/IMG_7236_1779447433922.jpeg";
 import ytrisMerchImg from "@assets/IMG_5708_1776301834929.jpeg";
 import replitCertImg from "@assets/IMG_5719_1776302272437.jpeg";
 import replitLogoImg from "@assets/IMG_5488_1776302272437.png";
+import auroraStudioImg from "@assets/IMG_7512_1779447433922.jpeg";
+import rudyImg from "@assets/IMG_7424_1779447433922.jpeg";
+import babyAIImg from "@assets/IMG_7239_1779447433922.jpeg";
+import aiPipelineImg from "@assets/IMG_7485_1779447433922.jpeg";
 
 const projects = [
   {
@@ -66,6 +70,42 @@ const projects = [
       "A dedicated mobile-first merchandise storefront for NBA Josh's YTRISC collection. Features hoodies, tees, and limited drops — designed and shipped entirely with Replit.",
     tags: ["React", "E-commerce", "Mobile UI", "Merch", "Built on Replit"],
     image: ytrisMerchImg,
+    link: "#",
+  },
+  {
+    id: 7,
+    title: "Aurora Studio",
+    description:
+      "An AI-powered personal photo studio. Drop a selfie, an outfit reference, and a scene — Aurora dresses you, lights the stage, and delivers a professional-grade shot. Built on Replit with full image generation and upload pipeline.",
+    tags: ["React", "AI", "Image Generation", "Mobile UI", "Built on Replit"],
+    image: auroraStudioImg,
+    link: "#",
+  },
+  {
+    id: 8,
+    title: "Rudy — Customizable AI Agent",
+    description:
+      "A fully customizable AI assistant you own forever. Powered by a Claude + Grok hybrid, Rudy lets you personalize its name, look, personality, and capabilities to match your workflow. One-time purchase, built on Replit.",
+    tags: ["React", "Claude AI", "Grok", "OpenRouter", "Built on Replit"],
+    image: rudyImg,
+    link: "#",
+  },
+  {
+    id: 9,
+    title: "Baby AI",
+    description:
+      "A personal AI assistant with a vibe-based persona system. Switch between GPT-5, Gemini 3.1 Pro, Grok 4, DeepSeek, and more — all in one sleek dark interface. Built and deployed on Replit.",
+    tags: ["React", "Multi-Model AI", "OpenAI", "Gemini", "Built on Replit"],
+    image: babyAIImg,
+    link: "#",
+  },
+  {
+    id: 10,
+    title: "AI Creative Pipeline Studio",
+    description:
+      "A multi-step AI workflow platform combining LLM scripting, image generation, and Seedance 2.0 video — all in one click. Preset workflows include UGC ad creation, image-to-video, and more. Built on Replit.",
+    tags: ["React", "AI Workflows", "Video Gen", "Seedance", "Built on Replit"],
+    image: aiPipelineImg,
     link: "#",
   },
 ];
