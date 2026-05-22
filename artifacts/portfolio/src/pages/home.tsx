@@ -10,12 +10,14 @@ import tessArtsImg from "@assets/IMG_5540_1776301834929.jpeg";
 import ytShortImg from "@assets/IMG_7004_1779447433922.jpeg";
 import ytrisNFTImg from "@assets/IMG_7236_1779447433922.jpeg";
 import ytrisMerchImg from "@assets/IMG_5708_1776301834929.jpeg";
-import replitCertImg from "@assets/IMG_5719_1776302272437.jpeg";
+import replitCertL2Img from "@assets/IMG_5719_1776302272437.jpeg";
+import replitCertImg from "@assets/IMG_3123_1779447698156.jpeg";
 import replitLogoImg from "@assets/IMG_5488_1776302272437.png";
 import auroraStudioImg from "@assets/IMG_7512_1779447433922.jpeg";
 import rudyImg from "@assets/IMG_7424_1779447433922.jpeg";
 import babyAIImg from "@assets/IMG_7239_1779447433922.jpeg";
 import aiPipelineImg from "@assets/IMG_7485_1779447433922.jpeg";
+import refaceImg from "@assets/IMG_3154_1779447698156.jpeg";
 
 const projects = [
   {
@@ -108,6 +110,15 @@ const projects = [
     image: aiPipelineImg,
     link: "#",
   },
+  {
+    id: 11,
+    title: "REFACE — Cinematic AI Studio",
+    description:
+      "A cinematic AI generation platform made for artists, labels, and visual innovators. Dense, fast, and precise control over every pixel. Features a full studio, pricing plans, and AI-powered content creation — built on Replit.",
+    tags: ["React", "AI", "Generative Art", "Studio", "Built on Replit"],
+    image: refaceImg,
+    link: "#",
+  },
 ];
 
 const expertise = [
@@ -140,13 +151,24 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-hidden selection:bg-primary/30 selection:text-primary">
+      {/* Replit top banner */}
+      <div className="fixed top-0 left-0 right-0 z-[60] flex items-center justify-center gap-2 px-4 py-1.5 bg-orange-500/90 backdrop-blur-sm text-black text-xs font-bold tracking-wider">
+        <img src={replitLogoImg} alt="Replit" className="w-3.5 h-3.5 object-contain" />
+        BUILT EXCLUSIVELY ON REPLIT · REPLIT CERTIFIED LEVEL 3 PROFICIENT BUILDER
+        <img src={replitLogoImg} alt="Replit" className="w-3.5 h-3.5 object-contain" />
+      </div>
+
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 md:px-12 backdrop-blur-md bg-background/50 border-b border-white/5">
+      <nav className="fixed top-7 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 md:px-12 backdrop-blur-md bg-background/50 border-b border-white/5">
         <div className="text-xl font-bold tracking-tighter text-white flex items-center gap-2">
           <div className="w-8 h-8 rounded bg-gradient-to-tr from-primary to-secondary flex items-center justify-center text-background font-mono text-sm">
             JS
           </div>
           <span className="hidden sm:inline-block">Joseph Sunday</span>
+          <span className="hidden md:flex items-center gap-1 ml-1 px-2 py-0.5 rounded-full bg-orange-500/15 border border-orange-500/30 text-orange-400 text-xs font-semibold">
+            <img src={replitLogoImg} alt="Replit" className="w-3 h-3 object-contain" />
+            Replit Builder
+          </span>
         </div>
         <div className="flex items-center gap-6 text-sm font-medium text-muted-foreground">
           <a href="#about" className="hover:text-primary transition-colors">About</a>
@@ -159,7 +181,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center pt-20">
+      <section className="relative min-h-screen flex items-center justify-center pt-32">
         <motion.div
           className="absolute inset-0 z-0"
           style={{ y: heroY, opacity: heroOpacity }}
@@ -176,18 +198,33 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary mb-4 text-sm font-medium">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-              </span>
-              Available for new projects — worldwide
+            <div className="flex flex-wrap items-center gap-2 mb-4 justify-center md:justify-start">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-medium">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                </span>
+                Available for new projects — worldwide
+              </div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-orange-500/40 bg-orange-500/10 text-orange-400 text-sm font-medium">
+                <img src={replitLogoImg} alt="Replit" className="w-3.5 h-3.5 object-contain" />
+                Replit Partner
+              </div>
             </div>
 
-            {/* Replit certification badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-orange-500/40 bg-orange-500/10 text-orange-400 mb-8 text-sm font-medium ml-2">
-              <Award className="w-3.5 h-3.5" />
-              Replit Certified · Level 2 Core Builder
+            {/* Level 3 cert card */}
+            <div className="flex items-center gap-4 mb-8 p-4 rounded-2xl border border-orange-500/30 bg-gradient-to-r from-orange-500/10 to-amber-500/5 max-w-sm mx-auto md:mx-0">
+              <div className="flex-shrink-0 w-16 h-16 rounded-xl overflow-hidden shadow-lg border border-orange-500/20">
+                <img src={replitCertImg} alt="Replit Level 3 Certification" className="w-full h-full object-cover object-top" />
+              </div>
+              <div>
+                <div className="flex items-center gap-1.5 mb-0.5">
+                  <img src={replitLogoImg} alt="Replit" className="w-3.5 h-3.5 object-contain" />
+                  <span className="text-orange-400 text-xs font-bold uppercase tracking-widest">Replit Certified</span>
+                </div>
+                <p className="text-white font-bold text-base leading-tight">Level 3 — Proficient Builder</p>
+                <p className="text-orange-300/70 text-xs font-mono mt-0.5">@josephcrown920</p>
+              </div>
             </div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter leading-tight mb-6">
@@ -196,7 +233,7 @@ export default function Home() {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-10">
-              I build AI-powered websites using <span className="text-orange-400 font-semibold">Replit</span> — from Web3 platforms to creator tools to e-commerce stores. Every project in my portfolio was built and deployed on Replit.
+              I build full-stack AI-powered products exclusively on <span className="text-orange-400 font-semibold">Replit</span> — from Web3 platforms and creator tools to e-commerce stores and AI agents. Every project ships on Replit, start to finish.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-4">
@@ -275,20 +312,43 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mt-16 flex flex-col md:flex-row items-center gap-10 p-8 rounded-2xl border border-orange-500/20 bg-orange-500/5"
+            className="mt-16 flex flex-col md:flex-row items-stretch gap-0 rounded-2xl border border-orange-500/30 overflow-hidden shadow-2xl"
           >
-            <div className="flex-shrink-0 w-40 h-40 rounded-xl overflow-hidden shadow-lg">
-              <img src={replitCertImg} alt="Replit Core Builder Certification" className="w-full h-full object-cover" />
+            {/* Left — cert image */}
+            <div className="flex-shrink-0 w-full md:w-64 relative overflow-hidden">
+              <img src={replitCertImg} alt="Replit Level 3 Proficient Builder" className="w-full h-64 md:h-full object-cover object-top" />
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent to-background/20" />
             </div>
-            <div>
+
+            {/* Right — info */}
+            <div className="flex-1 p-8 bg-gradient-to-br from-orange-500/10 to-amber-500/5 flex flex-col justify-center">
               <div className="flex items-center gap-2 mb-3">
                 <img src={replitLogoImg} alt="Replit" className="w-5 h-5 object-contain" />
-                <span className="text-orange-400 text-sm font-semibold uppercase tracking-widest">Replit Certification</span>
+                <span className="text-orange-400 text-sm font-bold uppercase tracking-widest">Replit Official Certification</span>
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-3">Level 2 — Core Builder</h3>
-              <p className="text-muted-foreground max-w-xl leading-relaxed">
-                Certified by Replit for the ability to build more complex applications, store and manage data, and provide effective context to the AI Agent. Verified skills include full-stack development, database integration, and AI-driven product development on the Replit platform.
+              <h3 className="text-3xl md:text-4xl font-extrabold mb-1 text-white">Level 3 — Proficient Builder</h3>
+              <p className="text-orange-300/80 font-mono text-sm mb-5">@josephcrown920 · NBA Josh Main panel</p>
+              <p className="text-muted-foreground max-w-xl leading-relaxed mb-6">
+                Certified by Replit at Level 3 for the ability to connect external services, configure applications properly, and optimize resource usage. I work exclusively on Replit — building, deploying, and scaling production-grade products entirely within the Replit ecosystem.
               </p>
+              <div className="flex flex-wrap gap-3">
+                {["Connect External Services", "Configure Applications", "Optimize Resources", "Full-Stack on Replit"].map((skill) => (
+                  <span key={skill} className="text-xs font-mono px-3 py-1.5 rounded-full bg-orange-500/15 border border-orange-500/30 text-orange-300">
+                    ✓ {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Also show L2 badge */}
+            <div className="flex-shrink-0 w-full md:w-48 flex flex-col items-center justify-center p-6 bg-white/3 border-t md:border-t-0 md:border-l border-white/10 gap-3">
+              <div className="w-20 h-20 rounded-xl overflow-hidden shadow-md border border-white/10">
+                <img src={replitCertL2Img} alt="Level 2 Core Builder" className="w-full h-full object-cover" />
+              </div>
+              <div className="text-center">
+                <p className="text-white/50 text-xs font-mono uppercase tracking-wider">Also Holds</p>
+                <p className="text-white/80 font-bold text-sm mt-0.5">Level 2 Core Builder</p>
+              </div>
             </div>
           </motion.div>
         </div>
