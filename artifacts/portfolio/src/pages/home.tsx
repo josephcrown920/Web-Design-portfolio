@@ -9,7 +9,7 @@ import creatorsFactoryImg from "@assets/IMG_5533_1776301834929.jpeg";
 import tessArtsImg from "@assets/IMG_5540_1776301834929.jpeg";
 import ytShortImg from "@assets/IMG_7004_1779447433922.jpeg";
 import ytrisNFTImg from "@assets/IMG_7236_1779447433922.jpeg";
-import ytrisMerchImg from "@assets/IMG_5708_1776301834929.jpeg";
+import mudworldMerchImg from "@assets/IMG_6520_1779448173089.jpeg";
 
 import replitCertImg from "@assets/IMG_3123_1779447698156.jpeg";
 import replitLogoImg from "@assets/IMG_5488_1776302272437.png";
@@ -67,11 +67,11 @@ const projects = [
   },
   {
     id: 6,
-    title: "YTRISC Merch Store",
+    title: "MudWorld — Official Artist Platform",
     description:
-      "A dedicated mobile-first merchandise storefront for NBA Josh's YTRISC collection. Features hoodies, tees, and limited drops — designed and shipped entirely with Replit.",
-    tags: ["React", "E-commerce", "Mobile UI", "Merch", "Built on Replit"],
-    image: ytrisMerchImg,
+      "The official NBA Josh x MuddyTribe fan platform featuring a full merch store, limited drops, streaming links (Spotify, Apple Music, YouTube, TikTok), membership tiers, and live release announcements — built and deployed on Replit.",
+    tags: ["React", "E-commerce", "Artist Platform", "Merch", "Built on Replit"],
+    image: mudworldMerchImg,
     link: "#",
   },
   {
