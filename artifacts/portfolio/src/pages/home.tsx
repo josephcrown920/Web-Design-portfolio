@@ -10,7 +10,7 @@ import tessArtsImg from "@assets/IMG_5540_1776301834929.jpeg";
 import ytShortImg from "@assets/IMG_7004_1779447433922.jpeg";
 import ytrisNFTImg from "@assets/IMG_7236_1779447433922.jpeg";
 import ytrisMerchImg from "@assets/IMG_5708_1776301834929.jpeg";
-import replitCertL2Img from "@assets/IMG_5719_1776302272437.jpeg";
+
 import replitCertImg from "@assets/IMG_3123_1779447698156.jpeg";
 import replitLogoImg from "@assets/IMG_5488_1776302272437.png";
 import auroraStudioImg from "@assets/IMG_7512_1779447433922.jpeg";
@@ -340,16 +340,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Also show L2 badge */}
-            <div className="flex-shrink-0 w-full md:w-48 flex flex-col items-center justify-center p-6 bg-white/3 border-t md:border-t-0 md:border-l border-white/10 gap-3">
-              <div className="w-20 h-20 rounded-xl overflow-hidden shadow-md border border-white/10">
-                <img src={replitCertL2Img} alt="Level 2 Core Builder" className="w-full h-full object-cover" />
-              </div>
-              <div className="text-center">
-                <p className="text-white/50 text-xs font-mono uppercase tracking-wider">Also Holds</p>
-                <p className="text-white/80 font-bold text-sm mt-0.5">Level 2 Core Builder</p>
-              </div>
-            </div>
           </motion.div>
         </div>
       </section>
