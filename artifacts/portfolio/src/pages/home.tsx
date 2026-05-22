@@ -154,7 +154,7 @@ export default function Home() {
       {/* Replit top banner */}
       <div className="fixed top-0 left-0 right-0 z-[60] flex items-center justify-center gap-2 px-4 py-1.5 bg-orange-500/90 backdrop-blur-sm text-black text-xs font-bold tracking-wider">
         <img src={replitLogoImg} alt="Replit" className="w-3.5 h-3.5 object-contain" />
-        BUILT EXCLUSIVELY ON REPLIT · REPLIT CERTIFIED LEVEL 3 PROFICIENT BUILDER
+        NBA JOSH · TRAPPING DEV · AVAILABLE FOR HIRE ON UPWORK & CONTRA · REPLIT LEVEL 3 CERTIFIED
         <img src={replitLogoImg} alt="Replit" className="w-3.5 h-3.5 object-contain" />
       </div>
 
@@ -164,10 +164,13 @@ export default function Home() {
           <div className="w-8 h-8 rounded bg-gradient-to-tr from-primary to-secondary flex items-center justify-center text-background font-mono text-sm">
             JS
           </div>
-          <span className="hidden sm:inline-block">Joseph Sunday</span>
+          <div className="hidden sm:flex flex-col leading-tight">
+            <span className="text-white font-extrabold text-base">NBA Josh</span>
+            <span className="text-white/40 text-xs font-normal tracking-wide">Joseph Sunday</span>
+          </div>
           <span className="hidden md:flex items-center gap-1 ml-1 px-2 py-0.5 rounded-full bg-orange-500/15 border border-orange-500/30 text-orange-400 text-xs font-semibold">
             <img src={replitLogoImg} alt="Replit" className="w-3 h-3 object-contain" />
-            Replit Builder
+            Replit L3
           </span>
         </div>
         <div className="flex items-center gap-6 text-sm font-medium text-muted-foreground">
@@ -204,11 +207,11 @@ export default function Home() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
                 </span>
-                Available for new projects — worldwide
+                Open for work — Upwork &amp; Contra
               </div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-orange-500/40 bg-orange-500/10 text-orange-400 text-sm font-medium">
                 <img src={replitLogoImg} alt="Replit" className="w-3.5 h-3.5 object-contain" />
-                Replit Partner
+                Replit L3 Certified
               </div>
             </div>
 
@@ -223,17 +226,19 @@ export default function Home() {
                   <span className="text-orange-400 text-xs font-bold uppercase tracking-widest">Replit Certified</span>
                 </div>
                 <p className="text-white font-bold text-base leading-tight">Level 3 — Proficient Builder</p>
-                <p className="text-orange-300/70 text-xs font-mono mt-0.5">@josephcrown920</p>
+                <p className="text-orange-300/70 text-xs font-mono mt-0.5">@josephcrown920 · NBA Josh</p>
               </div>
             </div>
 
+            <p className="text-sm font-mono text-primary/70 uppercase tracking-widest mb-3">NBA Josh (Joseph Sunday)</p>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter leading-tight mb-6">
-              Engineering <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Intelligent</span> Web
+              Artist.<br />
+              Developer.<br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Trapping Dev.</span>
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-10">
-              I build full-stack AI-powered products exclusively on <span className="text-orange-400 font-semibold">Replit</span> — from Web3 platforms and creator tools to e-commerce stores and AI agents. Every project ships on Replit, start to finish.
+              I'm <span className="text-white font-semibold">NBA Josh</span> — an artist-turned-developer who builds full-stack AI products on <span className="text-orange-400 font-semibold">Replit</span>. Web3 platforms, creator tools, e-commerce stores, AI agents — I ship real products fast and I'm available to build yours.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-4">
@@ -420,25 +425,46 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-6xl font-bold mb-8 tracking-tight">
-              Ready for a website that{" "}
+            <p className="text-sm font-mono text-primary/60 uppercase tracking-widest mb-4">Hire NBA Josh</p>
+            <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+              Need a{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-                grows your business?
+                Trapping Dev
               </span>
+              {" "}on your team?
             </h2>
-            <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-              DM me on Instagram or send an email. I build on <span className="text-orange-400 font-semibold">Replit</span> — fast, reliable, and AI-powered from day one.
+            <p className="text-xl text-muted-foreground mb-4 max-w-2xl mx-auto">
+              I'm an artist <span className="text-white font-semibold">and</span> a developer — I understand your vision because I live it. Available for freelance projects on <span className="text-white font-semibold">Upwork</span> and <span className="text-white font-semibold">Contra</span>, or DM me directly.
+            </p>
+            <p className="text-muted-foreground/70 text-base mb-12 max-w-xl mx-auto">
+              I build on <span className="text-orange-400 font-semibold">Replit</span> — fast turnarounds, real deployed products, no excuses.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 h-14 px-10 text-lg w-full sm:w-auto" asChild>
-                <a href="https://instagram.com/NBAJosh71" target="_blank" rel="noopener noreferrer">
-                  DM @NBAJosh71
+            {/* Hire platforms */}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+              <Button size="lg" className="bg-[#14a800] text-white hover:bg-[#14a800]/90 h-14 px-10 text-lg w-full sm:w-auto font-bold" asChild>
+                <a href="https://www.upwork.com" target="_blank" rel="noopener noreferrer">
+                  Hire on Upwork ↗
                 </a>
               </Button>
-              <Button size="lg" variant="outline" className="border-white/10 hover:bg-white/5 h-14 px-10 text-lg w-full sm:w-auto" asChild>
+              <Button size="lg" className="bg-[#111] text-white hover:bg-white/10 border border-white/20 h-14 px-10 text-lg w-full sm:w-auto font-bold" asChild>
+                <a href="https://contra.com" target="_blank" rel="noopener noreferrer">
+                  Hire on Contra ↗
+                </a>
+              </Button>
+            </div>
+
+            {/* Direct contact */}
+            <p className="text-muted-foreground/50 text-sm mb-6 uppercase tracking-widest font-mono">or reach out directly</p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Button size="lg" className="bg-gradient-to-r from-pink-500 to-purple-600 text-white hover:opacity-90 h-12 px-8 text-base w-full sm:w-auto" asChild>
+                <a href="https://instagram.com/NBAJoshgram" target="_blank" rel="noopener noreferrer">
+                  📸 @NBAJoshgram on IG
+                </a>
+              </Button>
+              <Button size="lg" variant="outline" className="border-white/10 hover:bg-white/5 h-12 px-8 text-base w-full sm:w-auto" asChild>
                 <a href="mailto:Josephcrown920@gmail.com">
-                  <Mail className="mr-2 w-5 h-5" /> Josephcrown920@gmail.com
+                  <Mail className="mr-2 w-4 h-4" /> Josephcrown920@gmail.com
                 </a>
               </Button>
             </div>
@@ -450,7 +476,7 @@ export default function Home() {
       <footer className="py-8 border-t border-white/5 bg-background relative z-10 text-center md:text-left">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-muted-foreground text-sm font-mono flex items-center gap-2">
-            &copy; {new Date().getFullYear()} JOSEPH SUNDAY
+            &copy; {new Date().getFullYear()} NBA JOSH · JOSEPH SUNDAY
             <span className="text-white/20">·</span>
             <span className="flex items-center gap-1 text-orange-400/70">
               <img src={replitLogoImg} alt="Replit" className="w-3.5 h-3.5 object-contain" />
@@ -458,7 +484,9 @@ export default function Home() {
             </span>
           </div>
           <div className="flex gap-6 text-sm text-muted-foreground font-mono">
-            <a href="https://instagram.com/NBAJosh71" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">INSTAGRAM</a>
+            <a href="https://instagram.com/NBAJoshgram" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">@NBAJOSHGRAM</a>
+            <a href="https://www.upwork.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#14a800] transition-colors">UPWORK</a>
+            <a href="https://contra.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">CONTRA</a>
             <a href="mailto:Josephcrown920@gmail.com" className="hover:text-primary transition-colors">EMAIL</a>
           </div>
         </div>
